@@ -1,0 +1,280 @@
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 5 columns */
+  grid-gap: 10px; /* spacing between boxes */
+  max-width: 1800px;
+  max-height: 1200px;
+  margin: 20px auto; /* center on the page */
+  padding: 30px;
+  justify-items: center;
+}
+
+.key-note-icon {
+  display: block;
+  width: 180px;
+  height: auto;
+  position: relative;
+  transform: translate(0px, 40px) scale(2.8);
+  margin: 0 auto;
+}
+
+.secondary-key-notes-icon {
+  position: relative;
+  left: 50%;
+  transform: translate( -100px, -230px) scale(2);
+  width: 180px;
+  height: auto;
+  z-index: 10;
+  opacity: 0.4;
+}
+
+
+/* Style for the perfume named "......." */
+
+
+.parfum h1 {
+  font-family: "pragmatica", sans-serif;
+  font-size: 25px; 
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;       /* positions text in the center of the div */
+  transform: translateY(425px);
+  letter-spacing: 3px;
+}
+
+
+.parfum p {
+  text-align: center;       /* positions text in the center of the div */
+  transform: translateY(410px);
+}
+
+
+.parfum {
+  position: relative; /* Add this to all parfum containers */
+  font-family: "pragmatica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.copper {
+  
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.zero {
+  position: relative; /* necessary for absolute positioning inside */
+  
+  width: 430px;
+  height: 580px;
+  overflow: hidden; /* optional: hide anything overflowing */
+}
+
+/* .parfum.zero .key-note-icon {
+  transform: translate(10px, 40px) scale(3.4);
+} */
+
+.parfum.eau-de-parfum {
+  position: relative; /* necessary for absolute positioning inside */
+  
+  width: 430px;
+  height: 580px;
+  overflow: hidden; /* optional: hide anything overflowing */
+}
+
+/* .parfum.eau-de-parfum .key-note-icon {
+  transform: translate(10px, 40px) scale(3.4);
+} */
+
+.parfum.blackpepper {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.cdg2-man {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.amazingreen {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.wonderoud {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.rouge {
+ 
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.white {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.white h1 {
+  color: white;
+}
+
+.parfum.cdg2 {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.cdg2 .key-note-icon {
+  transform: translate(10px, 40px) scale(2.2);
+}
+
+.parfum.blue-santal {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.blue-santal .key-note-icon {
+  transform: translate(9px, 80px) scale(3);
+}
+
+.parfum.monocle-scent-three-sugi {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.monocle-scent-three-sugi .key-note-icon {
+  transform: translate( 0px, 30px) scale(3);
+}
+
+.parfum.floriental {
+  
+  width: 430px;
+  height: 580px;
+}
+
+
+.parfum.floriental  .key-note-icon {
+  transform: translate( 0px, -05px) scale(2.5);
+}
+
+.parfum.concrete {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.monocle-scent-four-yoyogi {
+  
+  width: 430px;
+  height: 580px;
+}
+
+
+
+.parfum.monocle-scent-four-yoyogi .key-note-icon {
+  transform: translate(10px, 40px) scale(2.2);
+}
+
+.parfum.wonderwood {
+  
+  width: 430px;
+  height: 580px;
+}
+
+.parfum.bbaa {
+  
+  width: 430px;
+  height: 580px;
+}
+
+
+
+/* Feminine text = white */
+.feminine .brand-label {
+  color: white !important;
+}
+
+/* Masculine text = black */
+.masculine .brand-label {
+  color: black !important;
+}
+
+.casual-star {
+  color: black;
+  display: block;
+  width: 180px;
+  height: auto;
+  position: absolute; /* Change to absolute positioning */
+  bottom: 71.3px; /* Position from bottom of container */
+  left: 71%; /* Center horizontally */
+  transform: translateX(-50%) scale(0.53); /* Center the star and maintain scale */
+  margin: 0;
+}
+
+
+.bottle-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;         /* Resize as needed */
+  transform: translate(-50%, 395%);
+  pointer-events: none; /* So it doesn't block clicks */
+ 
+}
+
+
+
+/* @media screen and (min-width: 1280px) and (min-height: 800px) { */
+  /* #container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;       
+    padding: 50px;        
+  }
+
+  .key-note-icon {
+    transform: translate(0px, 60px) scale(3.5);
+    width: 220px;
+  }
+
+  .secondary-key-notes-icon {
+    transform: translate(-120px, -260px) scale(2.5);
+    width: 220px;
+  }
+
+  .parfum {
+    width: 500px;
+    height: 650px;
+  }
+
+  .parfum h1 {
+    font-size: 32px;
+    transform: translateY(450px);
+    letter-spacing: 4px;
+  }
+
+  .parfum p {
+    transform: translateY(435px);
+  }
+
+  .bottle-info {
+    width: 300px;
+    transform: translate(-50%, 420%);
+  }
+
+  .casual-star {
+    bottom: 80px;
+    transform: translateX(-50%) scale(0.6); 
+  }
